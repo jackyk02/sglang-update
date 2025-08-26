@@ -42,7 +42,7 @@ instructions = [
     "open the drawer", 
     "pick up the cup"
 ]
-image_path = "vla/example.jpg"
+image_path = "robot.jpg"
 
 actions = get_batch_actions(
     instructions=instructions,
