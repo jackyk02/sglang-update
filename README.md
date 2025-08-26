@@ -34,7 +34,7 @@ sudo apt-get install -y libnuma1 numactl
 Start the OpenVLA inference server by running:
 
 ```bash
-python vla/openvla_server.py --seed 0
+python server.py
 ```
 
 The server will be accessible at `http://localhost:3200`.
@@ -67,7 +67,7 @@ def get_batch_actions(instruction, image_path, batch_size=3, temperature=1.0):
 
 # Example usage
 instruction = "close the drawer"
-image_path = "vla/example.jpg"
+image_path = "robot.jpg"
 
 discrete_tokens, continuous_actions = get_batch_actions(
     instruction=instruction,
